@@ -141,7 +141,7 @@
       outline: none !important;
       box-shadow: none !important;
       -webkit-tap-highlight-color: transparent;
-      filter: drop-shadow(0 4px 12px rgba(220, 20, 60, 0.6));
+      filter: drop-shadow(0 4px 12px rgba(255, 150, 180, 0.6));
     }
 
     @keyframes heartBounce {
@@ -174,11 +174,11 @@
     .big-heart-shape {
       width: 100%;
       height: 100%;
-      background-color: #fff0f0;
+      background-color: #fff0f5;
       clip-path: path('M115,190 C115,190 20,125 20,65 C20,32 42,15 72,15 C91,15 105,25 115,38 C125,25 139,15 158,15 C188,15 210,32 210,65 C210,125 115,190 115,190 Z');
       position: relative;
-      border: 3px solid #ff4d4d;
-      box-shadow: 0 10px 25px rgba(230, 0, 0, 0.4);
+      border: 3px solid #ffb6c1;
+      box-shadow: 0 10px 25px rgba(255, 182, 193, 0.5);
     }
 
     .heart-water-fill {
@@ -187,13 +187,13 @@
       left: 0;
       width: 100%;
       height: 0%;
-      background: linear-gradient(0deg, #cc0000, #ff3333, #ff6666);
+      background: linear-gradient(0deg, #ff8da1, #ffb6c1, #ffc0cb);
       transition: height 0.12s ease-out;
-      box-shadow: 0 -4px 12px rgba(230, 0, 0, 0.6);
+      box-shadow: 0 -4px 12px rgba(255, 182, 193, 0.6);
     }
 
     .fill-instruction {
-      color: #d60000;
+      color: #d87093;
       font-size: 15px;
       margin-top: 25px;
       font-weight: 500;
@@ -206,14 +206,14 @@
       50% { opacity: 1; }
     }
 
-    /* เปลี่ยนโทนสีพื้นหลังหน้าแสดงรูปเป็น ชมพู-ม่วง หวานๆ */
+    /* เปลี่ยนโทนสีพื้นหลังหน้าแสดงรูปเป็น ชมพู-ม่วง พาสเทลหวานๆ */
     .polaroid-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(135deg, rgba(255, 182, 193, 0.85), rgba(221, 160, 221, 0.85)), url('พื้นหลัง.jpg');
+      background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.85), rgba(216, 191, 216, 0.85)), url('พื้นหลัง.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -233,7 +233,7 @@
       width: 115px;
       background: #ffffff;
       padding: 3px 3px 12px 3px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(200, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(216, 191, 216, 0.3), 0 2px 4px rgba(255, 182, 193, 0.2);
       border-radius: 2px;
       cursor: pointer;
       opacity: 0;
@@ -277,14 +277,14 @@
       right: -8px;
       width: 26px;
       height: 26px;
-      background: #e60000;
-      color: white;
+      background: #ffb6c1;
+      color: #7b3f00;
       border-radius: 50%;
       text-align: center;
       line-height: 26px;
       font-size: 13px;
       font-weight: bold;
-      box-shadow: 0 2px 8px rgba(230, 0, 0, 0.4);
+      box-shadow: 0 2px 8px rgba(255, 182, 193, 0.6);
       cursor: pointer;
       z-index: 10;
       transition: opacity 0.3s ease, transform 0.3s ease;
@@ -335,7 +335,6 @@
       animation-delay: var(--anim-delay, 0s);
     }
 
-    /* ขยายขนาดรูปตอนกดดูให้ใหญ่และชัดเจนขึ้นกว่าเดิม 80% (max-height จาก 60vh เป็น ~108vh หรือปรับสัดส่วนขยายเพิ่มขึ้น) */
     .polaroid.active {
       position: fixed !important;
       top: 50% !important;
@@ -346,7 +345,7 @@
       max-width: 92vw !important;
       height: auto !important;
       padding: 8px 8px 18px 8px !important;
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35) !important;
+      box-shadow: 0 25px 50px rgba(216, 191, 216, 0.4) !important;
       border-radius: 6px;
       animation: none !important;
       opacity: 1 !important;
@@ -382,8 +381,8 @@
       bottom: 25px;
       left: 50%;
       transform: translateX(-50%);
-      background: #e60000;
-      color: #ffffff;
+      background: #ffb6c1;
+      color: #6b4226;
       border: none;
       padding: 10px 22px;
       border-radius: 25px;
@@ -391,13 +390,13 @@
       font-weight: 500;
       cursor: pointer;
       z-index: 400;
-      box-shadow: 0 4px 15px rgba(230, 0, 0, 0.5);
+      box-shadow: 0 4px 15px rgba(255, 182, 193, 0.6);
       transition: transform 0.2s, background-color 0.2s;
     }
 
     .back-to-message-btn:active {
       transform: translateX(-50%) scale(0.95);
-      background: #cc0000;
+      background: #ff9dad;
     }
 
     .floating-heart {
@@ -406,7 +405,7 @@
       z-index: 350;
       font-size: 26px;
       animation: floatUp 2.2s ease-out forwards;
-      filter: drop-shadow(0 2px 6px rgba(230, 0, 0, 0.5));
+      filter: drop-shadow(0 2px 6px rgba(255, 182, 193, 0.6));
     }
 
     @keyframes floatUp {
@@ -799,13 +798,13 @@
     }, { passive: false });
     window.addEventListener('touchend', stopWatering);
 
-    const redHearts = ['💗', '💜', '🤍'];
+    const pastelHearts = ['💗', '💜', '🤍', '💖', '✨'];
 
     function createFloatingHearts(count = 1, customX = null, customY = null) {
       for (let i = 0; i < count; i++) {
         const heart = document.createElement('div');
         heart.className = 'floating-heart';
-        heart.innerText = redHearts[Math.floor(Math.random() * redHearts.length)];
+        heart.innerText = pastelHearts[Math.floor(Math.random() * pastelHearts.length)];
         
         const startX = customX !== null ? (customX + (Math.random() * 60 - 30)) : (Math.random() * (viewport.clientWidth - 40) + 20);
         const startY = customY !== null ? (customY + (Math.random() * 40 - 20)) : (viewport.clientHeight / 2 + 50);
@@ -829,7 +828,6 @@
       }, 120);
     }
 
-    /* ปรับตำแหน่งพิกัด (top, left) ใหม่ให้รูปกระจายตัวสมดุลตรงกลาง ไม่กองไปทางซ้าย พร้อมอัปเดตข้อความและ photo3.jpg */
     const polaroidData = [
       { img: 'photo1.jpg', text: 'รูปเเรกที่เค้าเอาอะอ้วน<br>ตั้งโปรไฟล์น่ารักกก', top: '12%', left: '12%', rotate: '-7deg', duration: '1.8s', delay: '0s' },
       { img: 'photo2.jpg', text: 'รูปเเรกที่ได้ถ่ายอะอ้วน<br>ตอนหลับหน้าเอ็นดูมากก', top: '12%', left: '55%', rotate: '6deg', duration: '2.4s', delay: '0.4s' },
